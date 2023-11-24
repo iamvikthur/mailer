@@ -20,6 +20,7 @@ class AppController extends Controller
         return view('dashboard', compact('totalMails', 'totalSentMails', 'queueMails', 'failedJobs'));
     }
 
+    // send emails
     public function sendIndex()
     {
         return view('sendMails');
